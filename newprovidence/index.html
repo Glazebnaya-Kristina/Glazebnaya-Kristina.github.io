@@ -89,7 +89,7 @@
           </section>
           <section class="about-application">
             <div class="about-application__inner">
-              <h2 class="about-application__title title-line">Beautiful Interface</h2><span class="about-application__text">Landing Screen</span><img class="about-application__img" src="images/screens2.png"/><img class="about-application__logo logo logo--opacity" src="images/logo.png"/>
+              <h2 class="about-application__title title-line">Beautiful Interface</h2><span class="about-application__text">Landing Screen</span><img class="about-application__img" src="images/screens2.png"><img class="about-application__logo logo logo--opacity" src="images/logo.png">
               <h3 class="about-application__subtitle">Get it to your smartphone</h3>
               <form class="form  form--middle about-application__form" action="/">
                 <p class="form__wrapper">
@@ -97,12 +97,76 @@
                   <button class="btn  btn--green btn--middle btn--absolute btn--absolute-right btn--icon btn--icon-arrow" type="button">Send Invite
                   </button>
                 </p>
-              </form><span class="about-application__text">or Download From</span>
-              <!--a(href="#").btn.btn--dark-blue-->
-              <!--  svg(width="30" height="35" viewBox="0 0 30 35")-->
-              <!--    use(xlink:href="icons/sprite.svg#icon-app")-->
-              <!--  | Скачать с-->
-              <!--  span.btn__span Appstore-->
+              </form><span class="about-application__text">or Download From</span><a class="btn  btn--dark-blue btn--download btn--big-horizontal btn--big-vertical" href="#" download="download">Download on the
+                <svg class="icon icon--left icon--left-big" width="29" height="32" viewBox="0 0 30 35">
+                  <use xlink:href="icons/sprite.svg#icon-app"></use>
+                </svg><span class="btn__span">App Store</span></a>
+            </div>
+          </section>
+          <section class="tariffs">
+            <div class="tariffs__inner">
+              <div class="tariffs__info-block">
+                <h2 class="tariffs__title">Choose your perfect plan</h2>
+                <div class="tab tariffs__tab">
+                  <h3 class="tab__title">You are</h3>
+                  <ul class="tab__list">
+                    <li class="tab__item tab__item--active">
+                      <button class="btn tab__button">Individual
+                      </button>
+                    </li>
+                    <li class="tab__item">
+                      <button class="btn tab__button">Company
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <p class="tariffs__text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+                <p class="tariffs__info">Have a bigger team?<a class="link  link--blue link--underline tariffs__link" href="#">Let‘s talk</a>
+                </p>
+              </div>
+              <ul class="card__list">
+                <li class="card__item card__item--active">
+                  <h3 class="card__title">Starter</h3><span class="card__tariff btn btn--xs btn--border btn--border-grey">Free</span>
+                  <p class="card__subtitle">Build your schedule <br/> every day</p>
+                  <ul class="card__description-list">
+                    <li class="card__description-item">
+                      <svg class="card__svg" width="15" height="12" viewBox="0 0 15 12">
+                        <use xlink:href="icons/sprite.svg#icon-on"></use>
+                      </svg>Unlimeted events
+                    </li>
+                    <li class="card__description-item">
+                      <svg class="card__svg" width="15" height="12" viewBox="0 0 15 12">
+                        <use xlink:href="icons/sprite.svg#icon-on"></use>
+                      </svg>Connect Dropbox & Evernote
+                    </li>
+                  </ul>
+                  <button class="btn  btn--border btn--border-blue btn--xxl btn--center card__button">Get started
+                  </button>
+                  <li class="card__item">
+                    <h3 class="card__title">Pro</h3><span class="card__tariff btn btn--xs btn--border btn--border-grey">$4.99</span>
+                    <p class="card__subtitle">Make your life <br/> better</p>
+                    <ul class="card__description-list">
+                      <li class="card__description-item">
+                        <svg class="card__svg" width="15" height="12" viewBox="0 0 15 12">
+                          <use xlink:href="icons/sprite.svg#icon-on"></use>
+                        </svg>Unlimeted events
+                      </li>
+                      <li class="card__description-item">
+                        <svg class="card__svg" width="15" height="12" viewBox="0 0 15 12">
+                          <use xlink:href="icons/sprite.svg#icon-on"></use>
+                        </svg>Connect Dropbox & Evernote
+                      </li>
+                      <li class="card__description-item">
+                        <svg class="card__svg" width="15" height="12" viewBox="0 0 15 12">
+                          <use xlink:href="icons/sprite.svg#icon-on"></use>
+                        </svg>Personal Assistant
+                      </li>
+                    </ul>
+                    <button class="btn  btn--border btn--border-blue btn--xxl btn--center card__button">Get started
+                    </button>
+                  </li>
+                </li>
+              </ul>
             </div>
           </section>
         </main>
