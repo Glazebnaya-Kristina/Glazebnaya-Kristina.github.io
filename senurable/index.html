@@ -8,7 +8,7 @@
     <meta name="format-detection" content="address=no">
     <meta name="format-detection" content="email=no">
     <meta content="notranslate" name="google">
-    <title>Главная страница</title>
+    <title>Senurable | Разработка сайтов</title>
     <meta name="description" content="">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
     <link rel="preconnect" href="//cdnjs.cloudflare.com/">
@@ -20,83 +20,248 @@
       <div class="page__content">
         <header class="page-header">
           <div class="page-header__inner">
-            <div class="page-header__top"><a class="logo page-header__logo" href="#"><img class="page-header__img" src="images/logo.svg" alt="Логотип Senurable"/></a>
-              <button class="button  button--pink button--calculator button--bold button--text-small button--uppercase page-header__calculator" type="button">Калькулятор стоимости
+            <div class="page-header__top"><span class="logo  logo--white"><img class="page-header__img" src="images/logo.svg" alt="Логотип Senurable"/></span>
+              <button class="button  button--pink button--text-small button--uppercase page-header__button" type="button">Рассчитать стоимость
               </button>
               <button class="burger page-header__burger" aria-label="Toggle block undefined"><span>Toggle block undefined</span></button>
             </div>
-            <ul class="social page-header__social">
-              <li class="social__item"><a class="social__link" href="https://www.facebook.com/"><span class="social__name">Фейсбук</span>
-                  <svg class="social__icon" width="16" height="16" viewBox="0 0 16 16">
-                    <use xlink:href="icons/sprite.svg#icon-facebook"></use>
-                  </svg></a></li>
-              <li class="social__item"><a class="social__link" href="/"><span class="social__name">Вконтакте</span>
-                  <svg class="social__icon" width="16" height="9" viewBox="0 0 30 20">
-                    <use xlink:href="icons/sprite.svg#icon-vk"></use>
-                  </svg></a></li>
-              <li class="social__item"><a class="social__link" href="/"><span class="social__name">Linkedin</span>
-                  <svg class="social__icon" width="13" height="13" viewBox="0 0 20 20">
-                    <use xlink:href="icons/sprite.svg#icon-in"></use>
-                  </svg></a></li>
-              <li class="social__item"><a class="social__link" href="/"><span class="social__name">Behance</span>
-                  <svg class="social__icon" width="18" height="15" viewBox="0 0 27 18">
-                    <use xlink:href="icons/sprite.svg#icon-be"></use>
-                  </svg></a></li>
-            </ul>
-            <ul class="breadcrumbs page-header__breadcrumbs" aria-label="Breadcrumb">
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/home">Главная</a>
+            <ol class="breadcrumbs page-header__breadcrumbs" aria-label="Breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="/home" itemprop="item"><span class="breadcrumbs__name" itemprop="name">Главная</span>
+                  <meta property="position" content="1"/></a>
               </li>
-              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/services">Услуги</a>
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="/services" itemprop="item"><span class="breadcrumbs__name" itemprop="name">Услуги</span>
+                  <meta property="position" content="2"/></a>
               </li>
-              <li class="breadcrumbs__item"><span class="breadcrumbs__current">Разработка сайтов для бизнеса</span>
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><span class="breadcrumbs__current" itemprop="item"><span class="breadcrumbs__name" itemprop="name">Разработка сайтов для бизнеса</span></span>
               </li>
-            </ul>
-            <div class="page-header__info">
-              <h1 class="page-header__title"><strong class="page-header__title-strong">Разработка сайтов</strong>для бизнеса</h1>
-              <ul class="page-header__description-list">
-                <li class="page-header__description-item">Мы разрабатываем красивые качественные сайты, с использованием современных технологий.</li>
-                <li class="page-header__description-item">Выведем бизнес на новый уровень.</li>
+            </ol>
+            <section class="page-header__content">
+              <div class="page-header__content-wrapper">
+                <h1 class="page-header__title"><strong class="page-header__title-strong">Разработка сайтов</strong>для бизнеса</h1>
+                <p class="page-header__description">Мы разрабатываем красивые качественные сайты, с использованием современных технологий.</p>
+                <p class="page-header__description">Выведем бизнес на новый уровень.</p>
+                <button class="button  button--pink button--line page-header__button-request" type="button">Запрос оценки стоимости
+                </button>
+              </div>
+              <ul class="social page-header__social">
+                <li class="social__item social__item--hexagon"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Фейсбук</span>
+                    <svg class="social__icon" width="16" height="16" viewBox="0 0 16 16">
+                      <use xlink:href="icons/sprite.svg#icon-facebook"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--hexagon"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Вконтакте</span>
+                    <svg class="social__icon" width="16" height="9" viewBox="0 0 30 20">
+                      <use xlink:href="icons/sprite.svg#icon-vk"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--hexagon"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Linkedin</span>
+                    <svg class="social__icon" width="13" height="13" viewBox="0 0 20 20">
+                      <use xlink:href="icons/sprite.svg#icon-in"></use>
+                    </svg></a></li>
+                <li class="social__item social__item--hexagon"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Behance</span>
+                    <svg class="social__icon" width="18" height="15" viewBox="0 0 27 18">
+                      <use xlink:href="icons/sprite.svg#icon-be"></use>
+                    </svg></a></li>
               </ul>
-              <button class="button  button--pink button--shift-left button--bold button--line" type="button">Запрос оценки стоимости
-              </button>
-            </div>
+            </section>
           </div>
         </header>
         <main class="page-main">
+          <!-- список модификаторов
+          var allMods = '';
+          if(typeof(mods) !== 'undefined' && mods) {
+          var modsList = mods.split(',');
+          for (var i = 0; i < modsList.length; i++) {
+          allMods = allMods + 'services--' + modsList[i].trim();
+          }
+          }
+          
+          -->
+          <section class="services">
+            <div class="services__inner">
+              <h2 class="title  title--grey title--center services__title">Что мы предлагаем
+              </h2>
+              <p class="services__choice">Выберите масштаб Вашего проекта</p>
+              <!-- список модификаторов
+              var allMods = '';
+              if(typeof(mods) !== 'undefined' && mods) {
+              var modsList = mods.split(',');
+              for (var i = 0; i < modsList.length; i++) {
+              allMods = allMods + ' tabs--' + modsList[i].trim();
+              }
+              }
+              
+              
+              -->
+              <div class="tabs services__tabs">
+                <ul class="tabs__links">
+                  <li class="tabs__link-wrap   tabs__link-wrap--active tabs__link-wrap--big-icons"><a class="tabs__link" href="#tab00" data-toggle="tab"><span class="tabs__icon-wrapper">
+                        <svg class="tabs__icon" width="50" height="55">
+                          <use xlink:href="icons/sprite.svg#icon-rocket"></use>
+                        </svg></span>Лендинг</a></li>
+                  <li class="tabs__link-wrap tabs__link-wrap--big-icons"><a class="tabs__link" href="#tab01" data-toggle="tab"><span class="tabs__icon-wrapper">
+                        <svg class="tabs__icon" width="75" height="55">
+                          <use xlink:href="icons/sprite.svg#icon-astronaut"></use>
+                        </svg></span>Корпоративный сайт</a></li>
+                  <li class="tabs__link-wrap tabs__link-wrap--big-icons"><a class="tabs__link" href="#tab02" data-toggle="tab"><span class="tabs__icon-wrapper">
+                        <svg class="tabs__icon" width="60" height="55">
+                          <use xlink:href="icons/sprite.svg#icon-satellite"></use>
+                        </svg></span>Интернет-магазин</a></li>
+                </ul>
+                <div class="tabs__content-wrapper">
+                  <!-- список модификаторов
+                  var allMods = '';
+                  if(typeof(mods) !== 'undefined' && mods) {
+                  var modsList = mods.split(',');
+                  for (var i = 0; i < modsList.length; i++) {
+                  allMods = allMods + ' tabs__content-item--' + modsList[i].trim();
+                  }
+                  }
+                  if(typeof(isActive) !== 'undefined' && isActive)
+                  allMods = allMods + '  tabs__content-item--active';
+                  
+                  
+                  -->
+                  <div class="tabs__content-item services__tabs-item" id="tab00">
+                    <h3 class="services__item-title">Разработка лендинга</h3>
+                    <p class="services__item-description">Лендинг в правильных руках - это мощный инструмент для привлечения клиентов.</p>
+                    <p class="services__item-description">Благодаря удачному расположению CTA-кнопок и лид-форм лендинг более эффективно воздействует на пользователя.</p>
+                    <p class="services__item-description">Лендинги создают под конкретный товар или услугу, они более эффективны для быстрых продаж и сбора лидов.</p>
+                    <!-- список модификаторов
+                    var allMods = '';
+                    if(typeof(mods) !== 'undefined' && mods) {
+                    var modsList = mods.split(',');
+                    for (var i = 0; i < modsList.length; i++) {
+                    allMods = allMods + 'service-info--' + modsList[i].trim();
+                    }
+                    }
+                    
+                    -->
+                    <ul class="service-info services__info">
+                      <li class="service-info__item"><span class="service-info__wrapper-icon">
+                          <svg class="service-info__icon" width="55" height="50">
+                            <use xlink:href="icons/sprite.svg#icon-stars"></use>
+                          </svg></span>
+                        <p class="service-info__item-description">Блоки<span class="service-info__value"><b>до 10</b></span>
+                        </p>
+                      </li>
+                      <li class="service-info__item"><span class="service-info__wrapper-icon">
+                          <svg class="service-info__icon" width="63" height="47">
+                            <use xlink:href="icons/sprite.svg#icon-robot"></use>
+                          </svg></span>
+                        <p class="service-info__item-description">Наш опыт<span class="service-info__value"><b>30</b> проектов</span>
+                        </p>
+                      </li>
+                      <li class="service-info__item"><span class="service-info__wrapper-icon">
+                          <svg class="service-info__icon" width="51" height="50">
+                            <use xlink:href="icons/sprite.svg#icon-sun"></use>
+                          </svg></span>
+                        <p class="service-info__item-description">Сроки<span class="service-info__value"><b>30</b> дней</span>
+                        </p>
+                      </li>
+                      <li class="service-info__item"><span class="service-info__wrapper-icon">
+                          <svg class="service-info__icon" width="31" height="51">
+                            <use xlink:href="icons/sprite.svg#icon-dollar"></use>
+                          </svg></span>
+                        <p class="service-info__item-description">Бюджет<span class="service-info__value"><b>$500 +</b></span>
+                        </p>
+                      </li>
+                    </ul>
+                    <p class="services__buttons">
+                      <button class="button  button--pink button--full services__btn-details">Подробнее о лендинге
+                      </button>
+                      <button class="button  button--transparent button--icon button--triangle services__btn-calculate">Рассчитать стоимость лендинга
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <section class="about-us">
             <div class="about-us__inner">
-              <h2 class="about-us__title">Почему клиенты обращаются к нам</h2>
+              <h2 class="title  title--grey title--angle about-us__title">Почему клиенты обращаются к нам
+              </h2>
               <p class="about-us__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста.</p>
               <ul class="about-us__list">
-                <li class="about-us__item"><strong>
-                    <svg width="34" height="43">
-                      <use xlink:href="images/icons/sprite.svg#icon-robot2"></use>
+                <li class="about-us__item"><strong class="about-us__item-title">
+                    <svg class="about-us__icon" width="34" height="43">
+                      <use xlink:href="icons/sprite.svg#icon-robot2"></use>
                     </svg>Профессиональная команда</strong>
-                  <p>В нашей команде работают профессиональные макетологи, копирайтеры. дизайнеры, front-end и back-end разработчики с многолетним опытом работы.</p>
+                  <p class="about-us__item-description">В нашей команде работают профессиональные макетологи, копирайтеры. дизайнеры, front-end и back-end разработчики с многолетним опытом работы.</p>
+                  <p class="about-us__item-description"></p>
                 </li>
-                <li class="about-us__item"><strong>
-                    <svg width="42" height="43">
-                      <use xlink:href="images/icons/sprite.svg#icon-robot2"></use>
+                <li class="about-us__item"><strong class="about-us__item-title">
+                    <svg class="about-us__icon" width="55" height="43">
+                      <use xlink:href="icons/sprite.svg#icon-robot3"></use>
                     </svg>Холим и лелеем наших клиентов</strong>
-                  <p>Мы всегда рады новым заказам, внимательны к существующим проектам и дорожим каждым клиентом. Как правило, у нас нет хронической перегруженности проектами, как у больших студий.</p>
+                  <p class="about-us__item-description">Мы всегда рады новым заказам, внимательны к существующим проектам и дорожим каждым клиентом. Как правило, у нас нет хронической перегруженности проектами, как у больших студий.</p>
+                  <p class="about-us__item-description"></p>
                 </li>
-                <li class="about-us__item"><strong>
-                    <svg width="42" height="43">
-                      <use xlink:href="images/icons/sprite.svg#icon-robot2"></use>
+                <li class="about-us__item"><strong class="about-us__item-title">
+                    <svg class="about-us__icon" width="43" height="46">
+                      <use xlink:href="icons/sprite.svg#icon-phone"></use>
                     </svg>Оперативная поддержка</strong>
-                  <p>Быстро отвечаем в мессенджерах и всегда на связи. Готовы ответить на любые вопросы. Проверье это прямо сейчас по ссылке - <a href="#">Задать вопрос</a></p>
+                  <p class="about-us__item-description">Быстро отвечаем в мессенджерах и всегда на связи.</p>
+                  <p class="about-us__item-description">Готовы ответить на любые вопросы. Проверье это прямо сейчас по ссылке - <a class="about-us__question" href="#">задать вопрос</a></p>
                 </li>
-                <li class="about-us__item"><strong>
-                    <svg width="42" height="43">
-                      <use xlink:href="images/icons/sprite.svg#icon-robot2"></use>
-                    </svg>Холим и лелеем наших клиентов</strong>
-                  <p>Мы всегда рады новым заказам, внимательны к существующим проектам и дорожим каждым клиентом. Как правило, у нас нет хронической перегруженности проектами, как у больших студий.</p>
+                <li class="about-us__item"><strong class="about-us__item-title">
+                    <svg class="about-us__icon" width="42" height="43">
+                      <use xlink:href="icons/sprite.svg#icon-tablet"></use>
+                    </svg>Расскажем и покажем</strong>
+                  <p class="about-us__item-description">Часто бывает так, что наши клиенты не знают, как должно быть. Для этого есть мы.</p>
+                  <p class="about-us__item-description">Расскажем, как делают другие, покажем варианты и предложим лучший из возможных путей реализации.</p>
                 </li>
-                <li class="about-us__item"><strong>
-                    <svg width="42" height="43">
-                      <use xlink:href="images/icons/sprite.svg#icon-robot2"></use>
-                    </svg>Холим и лелеем наших клиентов</strong>
-                  <p>Мы всегда рады новым заказам, внимательны к существующим проектам и дорожим каждым клиентом. Как правило, у нас нет хронической перегруженности проектами, как у больших студий.</p>
+                <li class="about-us__item"><strong class="about-us__item-title">
+                    <svg class="about-us__icon" width="42" height="43">
+                      <use xlink:href="icons/sprite.svg#icon-inyan"></use>
+                    </svg>Комплексные услуги</strong>
+                  <p class="about-us__item-description">Кроме разработки сайтов мы также предлагаем продвижение сайтов, графический дизайн, копирайтинг, перевод сайта на иностранные языки.</p>
+                  <p class="about-us__item-description">Готовы выполнить Ваш проект под ключ, от А до Я.</p>
+                </li>
+                <li class="about-us__item"><strong class="about-us__item-title">
+                    <svg class="about-us__icon" width="42" height="39">
+                      <use xlink:href="icons/sprite.svg#icon-atom"></use>
+                    </svg>Прозрачные <br> условия, договор</strong>
+                  <p class="about-us__item-description">Все условия прописаны в договоре. Дополнительные затраты возможны только при заказе работ, не указанных в соглашении.</p>
+                  <p class="about-us__item-description"></p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- список модификаторов
+          var allMods = '';
+          if(typeof(mods) !== 'undefined' && mods) {
+          var modsList = mods.split(',');
+          for (var i = 0; i < modsList.length; i++) {
+          allMods = allMods + 'result--' + modsList[i].trim();
+          }
+          }
+          
+          -->
+          <section class="result">
+            <div class="result__inner">
+              <h2 class="title  title--white title--center result__title">Что в итоге Вы получите
+              </h2>
+              <p class="result__description">Всё включено! Вы получите сайт, достойный самых высоких позиций. А как Вы воспользуетесь данным инструментом, зависит только от Вас :)</p>
+              <ul class="result__list">
+                <li class="result__item"><strong class="result__item-title">Удобная панель управления</strong>
+                  <p class="result__item-description">В качестве системы управления контентом подключаем CMS MODX и Wordpress.</p>
+                  <p class="result__item-description">В админке Вы можете загружать и менять тексты, картинки, добавлять элементы списка.</p>
+                </li>
+                <li class="result__item"><strong class="result__item-title">Адаптивные страницы</strong>
+                  <p class="result__item-description">Сайт будет хорошо смотреться как на больших HD экранах, так и на смартфонах и планшетах.</p>
+                  <p class="result__item-description">Так как сейчас более 40% пользователей посещают сайты с мобильных устройств, сайты верстаются по принципу mobile first.</p>
+                </li>
+                <li class="result__item"><strong class="result__item-title">Грамотная подготовка к продвижению</strong>
+                  <p class="result__item-description">Мы не просто создаем сайты, а еще выполняем комплекс мероприятий по подготовке сайта к продвижению: выполняем базовое внутреннее SEO и оптимизацию скорости загрузки страниц.</p>
+                  <p class="result__item-description"></p>
+                </li>
+                <li class="result__item"><strong class="result__item-title">Современный дизайн</strong>
+                  <p class="result__item-description">Мы в курсе современных тенденций в сфере дизайна. Регулярно просматриваем лучшие работы в сфере дизайна, перенимаем опыт лучших дизайнеров и UI/UX специалистов мира</p>
+                  <p class="result__item-description">Часто предлагаем несколько вариантов на выбор, чтобы достичь максимального ощущения красоты, стиля и доверия.</p>
+                </li>
+                <li class="result__item"><strong class="result__item-title">Кроссбраузерный семантический код</strong>
+                  <p class="result__item-description">Уникальный, валидный, максимально семантический код позволит Вашему сайту быстрее продвинуться в поиске.</p>
+                  <p class="result__item-description">Учитываем и добросовестно следуем рекомендациям Google и Яндекс.</p>
                 </li>
               </ul>
             </div>
@@ -104,6 +269,82 @@
         </main>
       </div>
       <div class="page__footer-wrapper">
+        <footer class="page-footer">
+          <div class="page-footer__inner">
+            <h2 class="page-footer__title">Полезная информация</h2>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <h3 class="page-footer__title-item">Контакты</h3>
+                <ul class="contacts page-footer__section">
+                  <li class="contacts__item"><span class="contacts__wrapper-icon">
+                      <svg class="contacts__icon" width="31" height="16">
+                        <use xlink:href="icons/sprite.svg#icon-mail"></use>
+                      </svg></span><a class="contacts__item-link" href="mailto:info@senurable.com">info@senurable.com</a></li>
+                  <li class="contacts__item"><span class="contacts__wrapper-icon">
+                      <svg class="contacts__icon" width="13" height="27">
+                        <use xlink:href="icons/sprite.svg#icon-phone2"></use>
+                      </svg></span><a class="contacts__item-link" href="tel:+380961600237">+3 8096 16 00 237</a></li>
+                </ul>
+                <button class="button  button--pink button--uppercase button--icon button--phone button--vertical-line page-footer__button">Заказать звонок
+                </button>
+              </li>
+              <li class="page-footer__item">
+                <h3 class="page-footer__title-item">Услуги</h3>
+                <ul class="link page-footer__section">
+                  <li class="link__item"><a class="link__link" href="#">Разработка сайтов для бизнеса</a></li>
+                  <li class="link__item"><a class="link__link" href="#">Уникальный фирменный стиль</a></li>
+                  <li class="link__item"><a class="link__link" href="#">Продвижение сайтов</a></li>
+                  <li class="link__item"><a class="link__link" href="#">Написание текстов и переводы</a></li>
+                  <li class="link__item"><a class="link__link" href="#">Маркетинговые исследования</a></li>
+                  <li class="link__item"><a class="link__link" href="#">Аутсорсинг продаж</a></li>
+                </ul>
+              </li>
+              <li class="page-footer__item">
+                <h3 class="page-footer__title-item">Мы в соц.сетях</h3>
+                <ul class="social  social--row page-footer__section">
+                  <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Фейсбук</span>
+                      <svg class="social__icon" width="16" height="18" viewBox="0 0 14 16">
+                        <use xlink:href="icons/sprite.svg#icon-facebook"></use>
+                      </svg></a></li>
+                  <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Вконтакте</span>
+                      <svg class="social__icon" width="27" height="15" viewBox="0 0 30 15">
+                        <use xlink:href="icons/sprite.svg#icon-vk"></use>
+                      </svg></a></li>
+                  <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Linkedin</span>
+                      <svg class="social__icon" width="25" height="20" viewBox="0 0 20 17">
+                        <use xlink:href="icons/sprite.svg#icon-in"></use>
+                      </svg></a></li>
+                  <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Twitter</span>
+                      <svg class="social__icon" width="20" height="20" viewBox="0 0 20 18">
+                        <use xlink:href="icons/sprite.svg#icon-tw"></use>
+                      </svg></a></li>
+                  <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Behance</span>
+                      <svg class="social__icon" width="22" height="14" viewBox="0 0 27 16">
+                        <use xlink:href="icons/sprite.svg#icon-be"></use>
+                      </svg></a></li>
+                  <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Instagram</span>
+                      <svg class="social__icon" width="22" height="14" viewBox="0 0 27 16">
+                        <use xlink:href="icons/sprite.svg#icon-be"></use>
+                      </svg></a></li>
+                </ul>
+              </li>
+              <li class="page-footer__item">
+                <h3 class="page-footer__title-item">Полезные ссылки</h3>
+                <ul class="link page-footer__section">
+                  <li class="link__item"><a class="link__link" href="#">Бриф на разработку сайта</a></li>
+                  <li class="link__item"><a class="link__link" href="#">Бриф на разработку фирменного стиля</a></li>
+                  <li class="link__item"><a class="link__link" href="#">База знаний</a></li>
+                  <li class="link__item"><a class="link__link" href="#">О нас</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <section class="copyright">
+            <div class="copyright__inner"><span class="logo  logo--black"><img class="copyright__img" src="images/logo-black.svg" alt="Логотип Senurable"/></span>
+              <p class="copyright__info">Copyright 2019 (с)<b class="copyright__company">Senurable Web Factory. Все права защищены</b></p><a class="copyright__link" href="#">Политика конфиденциальности</a>
+            </div>
+          </section>
+        </footer>
       </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
