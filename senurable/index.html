@@ -266,6 +266,57 @@
               </ul>
             </div>
           </section>
+          <section class="feedback">
+            <div class="feedback__inner">
+              <div class="feedback__content">
+                <h2 class="title  title--white">Есть идея?
+                </h2>
+                <p class="feedback__description">Поделитесь своими идеями, пожеланиями, и мы пришлем детальную оценку по времени и стоимости индивидуально для Вашего проекта в течение 24 часов.</p>
+                <!--+form().feedback__form-->
+                <!--  +field-text({-->
+                <!--    title: 'Имя',-->
+                <!--    mods: 'icon',-->
+                <!--    attrs: {-->
+                <!--        placeholder: 'Имя'-->
+                <!--    }-->
+                <!--  })-->
+                <!--  +field-text({-->
+                <!--    title: 'E-mail',-->
+                <!--    mods: 'icon',-->
+                <!--    attrs: {-->
+                <!--        type: 'email',-->
+                <!--        placeholder: 'E-mail'-->
+                <!--    }-->
+                <!--  })-->
+                <!--  +field-text({-->
+                <!--    title: 'Описание Вашей идеи',-->
+                <!--    mods: 'icon',-->
+                <!--    isTextarea: true,-->
+                <!--    attrs: {-->
+                <!--        type: 'textarea',-->
+                <!--        placeholder: 'Расскажите подробнее о Вашей идее',-->
+                <!--        rows: '6'-->
+                <!--    }-->
+                <!--  })-->
+                <!--  +field-text({-->
+                <!--    title: 'Прикрепить Техническое Задание или презентацию',-->
+                <!--    attrs: {-->
+                <!--        type: 'file'-->
+                <!--    }-->
+                <!--  })-->
+                <form class="form feedback__form">
+                  <label class="form__label  form__label--icon form__label--astronaut feedback__label"><span class="form__name">Имя</span><span class="form__input-wrap">
+                      <input class="input  input--icon-left-xxl" type="text" placeholder="Имя"/></span></label>
+                  <label class="form__label  form__label--icon form__label--rocket feedback__label"><span class="form__name">Email</span><span class="form__input-wrap">
+                      <input class="input  input--icon-left-xl" type="email" placeholder="E-mail"/></span></label>
+                  <label class="form__label  form__label--icon form__label--telescope feedback__label"><span class="form__name">Описание Вашей идеи</span><span class="form__input-wrap">
+                      <textarea class="input  input--icon-left-xl" rows="6" placeholder="Расскажите подробнее о Вашей идее"></textarea></span></label><a class="link  link--icon link--icon-left link--clip link--no-hover feedback__button-attach" href="#">Прикрепить Техническое Задание или презентацию</a>
+                  <button class="button  button--pink button--uppercase button--full button--xxl feedback__button">Бесплатная оценка стоиости
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
       <div class="page__footer-wrapper">
@@ -291,13 +342,19 @@
                 </li>
                 <li class="page-footer__item">
                   <h3 class="page-footer__title-item">Услуги</h3>
-                  <ul class="link page-footer__section">
-                    <li class="link__item"><a class="link__link" href="#">Разработка сайтов для бизнеса</a></li>
-                    <li class="link__item"><a class="link__link" href="#">Уникальный фирменный стиль</a></li>
-                    <li class="link__item"><a class="link__link" href="#">Продвижение сайтов</a></li>
-                    <li class="link__item"><a class="link__link" href="#">Написание текстов и переводы</a></li>
-                    <li class="link__item"><a class="link__link" href="#">Маркетинговые исследования</a></li>
-                    <li class="link__item"><a class="link__link" href="#">Аутсорсинг продаж</a></li>
+                  <ul class="list page-footer__section">
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Разработка сайтов для бизнеса</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Уникальный фирменный стиль</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Продвижение сайтов</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Написание текстов и переводы</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Маркетинговые исследовани</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Аутсорсинг продаж</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="page-footer__item">
@@ -324,25 +381,29 @@
                           <use xlink:href="icons/sprite.svg#icon-be"></use>
                         </svg></a></li>
                     <li class="social__item social__item--background"><a class="social__link" href="#" target="_blank" rel="nofollow noreferrer"><span class="social__name">Instagram</span>
-                        <svg class="social__icon" width="22" height="14" viewBox="0 0 27 16">
-                          <use xlink:href="icons/sprite.svg#icon-be"></use>
+                        <svg class="social__icon" width="20" height="20" viewBox="0 0 20 20">
+                          <use xlink:href="icons/sprite.svg#icon-ig"></use>
                         </svg></a></li>
                   </ul>
                 </li>
                 <li class="page-footer__item">
                   <h3 class="page-footer__title-item">Полезные ссылки</h3>
-                  <ul class="link page-footer__section">
-                    <li class="link__item"><a class="link__link" href="#">Бриф на разработку сайта</a></li>
-                    <li class="link__item"><a class="link__link" href="#">Бриф на разработку фирменного стиля</a></li>
-                    <li class="link__item"><a class="link__link" href="#">База знаний</a></li>
-                    <li class="link__item"><a class="link__link" href="#">О нас</a></li>
+                  <ul class="list page-footer__section">
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Бриф на разработку сайта</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">Бриф на разработку фирменного стиля</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">База знаний</a>
+                    </li>
+                    <li class="list__item page-footer__section-item"><a class="link" href="#">О нас</a>
+                    </li>
                   </ul>
                 </li>
               </ul>
             </section>
             <section class="copyright">
               <div class="copyright__content"><span class="logo  logo--black"><img class="copyright__img" src="images/logo-black.svg" alt="Логотип Senurable"/></span>
-                <p class="copyright__info">Copyright 2019 (с)<b class="copyright__company">Senurable Web Factory. Все права защищены</b></p><a class="copyright__link" href="#">Политика конфиденциальности</a>
+                <p class="copyright__info">Copyright 2019 (с)<b class="copyright__company">Senurable Web Factory. Все права защищены</b></p><a class="link  link--underline copyright__link" href="#">Политика конфиденциальности</a>
               </div>
             </section>
           </div>
