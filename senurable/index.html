@@ -80,17 +80,6 @@
               <h2 class="title  title--grey title--center services__title">Что мы предлагаем
               </h2>
               <p class="services__choice">Выберите масштаб Вашего проекта</p>
-              <!-- список модификаторов
-              var allMods = '';
-              if(typeof(mods) !== 'undefined' && mods) {
-              var modsList = mods.split(',');
-              for (var i = 0; i < modsList.length; i++) {
-              allMods = allMods + ' tabs--' + modsList[i].trim();
-              }
-              }
-              
-              
-              -->
               <div class="tabs services__tabs">
                 <ul class="tabs__links">
                   <li class="tabs__link-wrap   tabs__link-wrap--active tabs__link-wrap--big-icons"><a class="tabs__link" href="#tab00" data-toggle="tab"><span class="tabs__icon-wrapper">
@@ -263,6 +252,45 @@
                   <p class="result__item-description">Уникальный, валидный, максимально семантический код позволит Вашему сайту быстрее продвинуться в поиске.</p>
                   <p class="result__item-description">Учитываем и добросовестно следуем рекомендациям Google и Яндекс.</p>
                 </li>
+              </ul>
+            </div>
+          </section>
+          <section class="portfolio">
+            <div class="portfolio__inner">
+              <h2 class="title  title--grey title--center">Наше портфолио
+              </h2>
+              <p class="portfolio__description">Мы выполнили более 55 проектов по разработке сайтов. </p>
+              <!--.portfolio__carousel-->
+              <ul class="thumbnail portfolio__thumbnail">
+                <li class="thumbnail__item">
+                  <button class="thumbnail__button">Все
+                  </button>
+                </li>
+                <li class="thumbnail__item">
+                  <button class="thumbnail__button">Лендинги
+                  </button>
+                </li>
+                <li class="thumbnail__item  thumbnail__item--active">
+                  <button class="thumbnail__button">Корпоративные сайты
+                  </button>
+                </li>
+                <li class="thumbnail__item">
+                  <button class="thumbnail__button">Интернет-магазины
+                  </button>
+                </li>
+              </ul>
+              <ul class="portfolio__carousel-list">
+                <li class="portfolio__carousel-item portfolio__carousel-item--1">
+                  <time class="portfolio__item-date" datetime="2019-02">Февраль <br/> 2019</time>
+                  <h3 class="portfolio__item-title">Translife</h3>
+                  <p class="portfolio__item-description">Транспортная компания</p>
+                  <button class="button  button--pink button--xs portfolio__item-button">Смотреть подробнее
+                  </button>
+                </li>
+                <p class="buttons-carousel">
+                  <button class="buttons-carousel__button buttons-carousel__button--prev"><span class="buttons-carousel__name">Назад</span></button>
+                  <button class="buttons-carousel__button buttons-carousel__button--next"><span class="buttons-carousel__name">Вперед</span></button>
+                </p>
               </ul>
             </div>
           </section>
