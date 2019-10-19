@@ -19,7 +19,10 @@
 <div class="page__inner">
   <div class="page__content">
     <header class="page-header">
-      <div class="page-header__inner"><a class="logo" href="index.html"><img class="page-header__img" src="images/logo.svg" alt="Логотип Steck"/></a>
+      <div class="page-header__inner"><a class="logo" href="index.html">
+          <svg class="logo__icon">
+            <use xlink:href="icons/sprite.svg#icon-logo"></use>
+          </svg></a>
         <h1 class="page-header__title"> Банк Steck</h1>
       </div>
     </header>
@@ -45,9 +48,9 @@
                 <svg class="social__icon">
                   <use xlink:href="icons/sprite.svg#icon-fb"></use>
                 </svg></a></li>
-            <li class="social__item"><a class="social__link  social__link--color-disc" href="#" target="_blank"><span class="social__name">viber</span>
+            <li class="social__item"><a class="social__link  social__link--color-disc social__link--wp" href="#" target="_blank"><span class="social__name">viber</span>
                 <svg class="social__icon">
-                  <use xlink:href="icons/sprite.svg#icon-viber"></use>
+                  <use xlink:href="icons/sprite.svg#icon-wp"></use>
                 </svg></a></li>
             <li class="social__item"><a class="social__link  social__link--color-disc" href="#" target="_blank"><span class="social__name">email</span>
                 <svg class="social__icon">
@@ -58,21 +61,21 @@
             <li class="privilege__item"><b class="privilege__title">Arkadaşlar</b>
               <p class="privilege__description">0 TL</p>
             </li>
-            <li class="privilege__item"><b class="privilege__title">Bonus</b>
+            <li class="privilege__item privilege__item--special"><b class="privilege__title">Bonus</b>
               <p class="privilege__description">10 TL</p>
             </li>
             <li class="privilege__item"><b class="privilege__title">Premium Kart</b>
               <p class="privilege__description">5 davet kaldı</p>
             </li>
           </ul>
-          <p class="status__conditions">her başvuru için 10 TL</p>
+          <!--p.status__conditions her başvuru için 10 TL-->
         </div>
       </section>
       <div class="page__footer-wrapper">
         <footer class="page-footer">
           <div class="page-footer__inner">
             <nav class="navigation"><a class="logo page-footer__link-logo" href="#">
-                <svg class="page-footer__icon">
+                <svg class="logo__icon">
                   <use xlink:href="icons/sprite.svg#icon-logo"></use>
                 </svg></a>
               <ul class="navigation__list page-footer__list">
