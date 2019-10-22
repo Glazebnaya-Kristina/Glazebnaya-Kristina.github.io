@@ -19,7 +19,7 @@
     <noscript>У вас отключен JavaScript. Это пугает.</noscript>
     <div class="page__inner">
       <div class="page__content">
-        <header class="page-header">
+        <header class="page-header" id="page-header">
           <div class="page-header__inner"><a class="logo" href="#">
               <svg class="logo__icon">
                 <use xlink:href="icons/sprite.svg#icon-logo"></use>
@@ -199,8 +199,8 @@
             </footer>
           </div>
         </main>
-        <section class="modal">
-          <div class="popup modal-openstatus" id="openstatus">
+        <section class="modal modal--opened">
+          <div class="popup modal-openstatus popup--opened" id="openstatus">
             <div class="modals__dialog">
               <button class="modals__close close" type="button"><span class="modal__button-close-name">Закрыть модальное окно</span></button>
               <div class="modals__content">
@@ -211,7 +211,7 @@
                   <button class="button  button--violet form-email__button" type="button">Durumum
                   </button>
                 </form>
-                <p class="modal-openstatus__registration">Zenmo'ya kaydolmamış gibisin. Kaydolmak için<a class="link  link--violet link--d-ib modal-openstatus__registration-link" href="#banking-services">burayı</a>tıklayın ve e-postanızı girin.
+                <p class="modal-openstatus__registration">Zenmo'ya kaydolmamış gibisin. Kaydolmak için<a class="link  link--violet link--d-ib modal-openstatus__registration-link" href="#page-header">burayı</a>tıklayın ve e-postanızı girin.
                 </p>
               </div>
             </div>
