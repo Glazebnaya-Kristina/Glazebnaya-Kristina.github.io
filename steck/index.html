@@ -168,7 +168,7 @@
                 <ul class="navigation__list page-footer__list">
                   <li class="navigation__item"><a class="link" href="сommon-problems.html">Sık sorunlar</a>
                   </li>
-                  <li class="navigation__item"><a class="link" href="#">İletişim</a>
+                  <li class="navigation__item modal-callback__button"><a class="link" href="#">İletişim</a>
                   </li>
                   <li class="navigation__item"><a class="link" href="blog.html">Blog</a>
                   </li>
@@ -204,7 +204,7 @@
           </footer>
         </div>
       </div>
-      <section class="modal">
+      <section class="modal modal--opened">
         <div class="popup modals modal-openstatus">
           <div class="modals__dialog">
             <button class="modals__close close modal-openstatus__close" type="button"><span class="modal__button-close-name">Закрыть модальное окно</span></button>
@@ -235,6 +235,28 @@
                   <input class="input" type="email" placeholder="email"/>
                 </label>
                 <button class="button  button--violet form-email__button" type="button">Durumum
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup modals modal-callback modal-callback--opened">
+          <div class="modals__dialog">
+            <button class="modals__close close modal-callback__close" type="button"><span class="modal__button-close-name">Закрыть модальное окно</span></button>
+            <div class="modals__content modals__content--middle">
+              <h2 class="title">Bizimle iletişime geçin
+              </h2>
+              <form class="form  form--column modal-callback__form">
+                <label class="label modal-callback__label"><span class="label__name">Name</span>
+                  <input class="input" placeholder="name"/>
+                </label>
+                <label class="label modal-callback__label"><span class="label__name">Email</span>
+                  <input class="input" placeholder="email"/>
+                </label>
+                <label class="label modal-callback__label"><span class="label__name">Massage</span>
+                  <textarea class="input input--textarea modal-callback__placeholder" placeholder="message" rows="7"></textarea>
+                </label>
+                <button class="button  button--violet modal-callback__button" type="button">Göndermek
                 </button>
               </form>
             </div>
