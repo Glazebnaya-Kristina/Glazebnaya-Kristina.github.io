@@ -33,7 +33,7 @@
                     <ul class="navigation__list">
                         <li><a href="about-edition.html">Об издании</a></li>
                         <li><a href="trekking.html">Походы</a></li>
-                        <li><a href="developments.html">События</a></li>
+                        <li><a href="developments.html">Новости</a></li>
                         <li><a href="advice.html">Советы</a></li>
                         <li><a href="articles.html">Статьи</a></li>
                         <li><a href="inspiration.html">Вдохновение</a></li>
@@ -55,8 +55,8 @@
                             </li>
                             <li>
                                 <a href="#">
-                <i class="icon-youtube"></i>
-                <span class="social__name">Youtube</span>
+                <i class="icon-odnoklassnik"></i>
+                <span class="social__name">Odnoklassnik</span>
               </a>
                             </li>
                             <li>
@@ -186,7 +186,7 @@
             <option value="value10">Название журнала</option>
           </select>
         </label>
-                    <a href="../img/logo.png" class="button button--blue button--uppercase subscription__form-download" download>Скачать
+                    <a href="../img/logo.png" class="button button--blue button--uppercase subscription__form-download js-open-modal" data-modal="download-pdf">Скачать
           PDF</a>
                 </form>
             </div>
@@ -284,10 +284,19 @@
             <h2 class="footer__title">Навигация по сайту</h2>
             <nav class="footer__navigation">
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Об издании</h3>
+                    <a href="about-edition.html">
+                        <h3 class="footer__subtitle">Об издании</h3>
+                    </a>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="subscription.html" class="footer__button-subscription">подписка</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Хочу в поход</h3>
+                    <a href="trekking.html">
+                        <h3 class="footer__subtitle">Походы</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="#">Пешеходный</a>
@@ -319,10 +328,15 @@
                         <li>
                             <a href="#">Комбинированный</a>
                         </li>
+                        <li>
+                            <a href="trekking.html" class="footer__link-want-camping">Хочу в поход</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">События</h3>
+                    <a href="developments.html">
+                        <h3 class="footer__subtitle">Новости</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="developments.html#all-news">Новости</a>
@@ -333,7 +347,9 @@
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Советы</h3>
+                    <a href="advice.html">
+                        <h3 class="footer__subtitle">Советы</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="advice.html#equipment">Снаряжение</a>
@@ -347,7 +363,9 @@
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Статьи</h3>
+                    <a href="articles.html">
+                        <h3 class="footer__subtitle">Статьи</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="articles.html#heroes">Герои</a>
@@ -355,13 +373,12 @@
                         <li>
                             <a href="articles.html#other-materials">Другие материалы</a>
                         </li>
-                        <li>
-                            <a href="trekking.html#want-camping">Хочу в поход</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Вдохновение</h3>
+                    <a href="inspiration.html">
+                        <h3 class="footer__subtitle">Вдохновение</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="inspiration.html#movie">Кино</a>
@@ -375,7 +392,9 @@
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Личный кабинет</h3>
+                    <a href="personal-area.html">
+                        <h3 class="footer__subtitle">Личный кабинет</h3>
+                    </a>
                     <h3 class="footer__subtitle">Контакты</h3>
                     <div class="footer__block-content">
                         <p class="footer__address">Адрес: Москва, ул. Пушкина 4А</p>
@@ -420,7 +439,7 @@
     <!-- Секция Модальны окна -->
     <section class="modal">
         <!--   Модальное окно РЕГЕСТРИЦИЯ -->
-        <div class="popup popup--big modal__registration" data-modal="registration">
+        <div class="popup popup--big  modal__registration" data-modal="registration">
             <div class="modal__dialog">
                 <div class="modal__header modal__header--line">
                     <h3 class="modal__title">Регистрация</h3>
@@ -431,6 +450,21 @@
                 </div>
                 <div class="modal__content">
                     <form action="#" class="form">
+                        <div class="modal__registration-wpapper-choise">
+                            <ul class="radio">
+                                <li class="radio__item">
+                                    <label for="registration-1">Обычный пользователь</label>
+                                    <input type="radio" id="registration-1" name="registration">
+                                </li>
+                                <li class="radio__item">
+                                    <input type="radio" id="registration-2" name="registration" checked>
+                                    <label for="registration-2">Руководитель группы</label>
+                                </li>
+                            </ul>
+                            <div class="file modal__registration-file">
+                                <input type="file">
+                            </div>
+                        </div>
                         <div class="form__wrapper form__wrapper--column-2">
                             <label class="label">
               <span class="label__name">Имя</span>
@@ -450,11 +484,11 @@
             </label>
                             <label class="label">
               <span class="label__name">Пароль</span>
-              <input type="password" class="input" placeholder="Пароль">
+              <input id="password" type="password" name="password" class="input" placeholder="Пароль">
             </label>
                             <label class="label">
               <span class="label__name">Повторите пароль</span>
-              <input type="password" class="input" placeholder="Повторите пароль">
+              <input type="password" name="confirm_password" class="input" placeholder="Повторите пароль">
             </label>
                         </div>
                         <span class="text-error">Ошибка...</span>
@@ -639,7 +673,7 @@
                     <div class="release-summary__wrapper-button">
                         <button class="button button--blue button--middle release-summary__button js-open-modal" type="button" data-modal="buy-print-journal">Купить
           </button>
-                        <a href="../img/logo.png" class="release-summary__download" download>Скачать PDF</a>
+                        <a href="#" class="release-summary__download js-open-modal" data-modal="download-pdf">Скачать PDF</a>
                     </div>
                 </div>
             </div>

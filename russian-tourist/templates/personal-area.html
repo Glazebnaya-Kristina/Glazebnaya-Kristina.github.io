@@ -33,7 +33,7 @@
                     <ul class="navigation__list">
                         <li><a href="about-edition.html">Об издании</a></li>
                         <li><a href="trekking.html">Походы</a></li>
-                        <li><a href="developments.html">События</a></li>
+                        <li><a href="developments.html">Новости</a></li>
                         <li><a href="advice.html">Советы</a></li>
                         <li><a href="articles.html">Статьи</a></li>
                         <li><a href="inspiration.html">Вдохновение</a></li>
@@ -55,8 +55,8 @@
                             </li>
                             <li>
                                 <a href="#">
-                <i class="icon-youtube"></i>
-                <span class="social__name">Youtube</span>
+                <i class="icon-odnoklassnik"></i>
+                <span class="social__name">Odnoklassnik</span>
               </a>
                             </li>
                             <li>
@@ -263,7 +263,7 @@
                                         <p class="hike__supervisor-wrapper">
                                             <span class="hike__supervisor-field">Руковадитель:</span>
                                             <span class="hike__supervisor-name">Имя Фамилия</span>
-                                            <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                            <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                         </p>
                                     </div>
                                     <div class="hike__watching">
@@ -497,7 +497,7 @@
                                         <p class="hike__supervisor-wrapper">
                                             <span class="hike__supervisor-field">Руковадитель:</span>
                                             <span class="hike__supervisor-name">Имя Фамилия</span>
-                                            <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                            <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                         </p>
                                     </div>
                                     <div class="hike__watching">
@@ -740,7 +740,7 @@
                                     <p class="hike__supervisor-wrapper">
                                         <span class="hike__supervisor-field">Руковадитель:</span>
                                         <span class="hike__supervisor-name">Имя Фамилия</span>
-                                        <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                        <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                     </p>
                                 </div>
                                 <div class="hike__watching">
@@ -889,10 +889,6 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="hike__wrapper-want">
-                                        <i class="icon-binoculars"></i>
-                                        <a href="/" class="hike__want-link">Следить за походом</a>
                                     </div>
                                 </div>
                             </header>
@@ -978,7 +974,7 @@
                                     <p class="hike__supervisor-wrapper">
                                         <span class="hike__supervisor-field">Руковадитель:</span>
                                         <span class="hike__supervisor-name">Имя Фамилия</span>
-                                        <button class="button button--blue hike__button-write">Написать руководителю</button>
+                                        <button class="button button--blue hike__button-write js-open-modal" data-modal="write-message-supervisor">Написать руководителю</button>
                                     </p>
                                 </div>
                                 <div class="hike__watching">
@@ -1112,10 +1108,6 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="hike__wrapper-want">
-                                        <i class="icon-binoculars"></i>
-                                        <a href="/" class="hike__want-link">Следить за походом</a>
                                     </div>
                                 </div>
                             </header>
@@ -1285,10 +1277,19 @@
             <h2 class="footer__title">Навигация по сайту</h2>
             <nav class="footer__navigation">
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Об издании</h3>
+                    <a href="about-edition.html">
+                        <h3 class="footer__subtitle">Об издании</h3>
+                    </a>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="subscription.html" class="footer__button-subscription">подписка</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Хочу в поход</h3>
+                    <a href="trekking.html">
+                        <h3 class="footer__subtitle">Походы</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="#">Пешеходный</a>
@@ -1320,10 +1321,15 @@
                         <li>
                             <a href="#">Комбинированный</a>
                         </li>
+                        <li>
+                            <a href="trekking.html" class="footer__link-want-camping">Хочу в поход</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">События</h3>
+                    <a href="developments.html">
+                        <h3 class="footer__subtitle">Новости</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="developments.html#all-news">Новости</a>
@@ -1334,7 +1340,9 @@
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Советы</h3>
+                    <a href="advice.html">
+                        <h3 class="footer__subtitle">Советы</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="advice.html#equipment">Снаряжение</a>
@@ -1348,7 +1356,9 @@
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Статьи</h3>
+                    <a href="articles.html">
+                        <h3 class="footer__subtitle">Статьи</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="articles.html#heroes">Герои</a>
@@ -1356,13 +1366,12 @@
                         <li>
                             <a href="articles.html#other-materials">Другие материалы</a>
                         </li>
-                        <li>
-                            <a href="trekking.html#want-camping">Хочу в поход</a>
-                        </li>
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Вдохновение</h3>
+                    <a href="inspiration.html">
+                        <h3 class="footer__subtitle">Вдохновение</h3>
+                    </a>
                     <ul class="footer__list">
                         <li>
                             <a href="inspiration.html#movie">Кино</a>
@@ -1376,7 +1385,9 @@
                     </ul>
                 </div>
                 <div class="footer__block">
-                    <h3 class="footer__subtitle">Личный кабинет</h3>
+                    <a href="personal-area.html">
+                        <h3 class="footer__subtitle">Личный кабинет</h3>
+                    </a>
                     <h3 class="footer__subtitle">Контакты</h3>
                     <div class="footer__block-content">
                         <p class="footer__address">Адрес: Москва, ул. Пушкина 4А</p>
@@ -2004,6 +2015,9 @@
                             <span class="text-error">Ошибка...</span>
                         </fieldset>
                         <button class="button button--blue create-trip__button" type="submit">Сменить</button>
+                        <!--    Для профля руководитель групп      -->
+                        <button class="button button--blue create-trip__button create-trip__button--supervisor" type="submit">Создать</button>
+                        <!--    Для профля руководитель групп      -->
                     </form>
                 </div>
             </div>
@@ -2240,6 +2254,39 @@
                 </div>
             </div>
         </div>
+        <!-- Модальное окно Написать сообщение -->
+        <div class="popup popup--big modal__write-message" data-modal="write-message-supervisor">
+            <div class="modal__dialog">
+                <div class="modal__header modal__header--line">
+                    <h3 class="modal__title">Написать руководителю</h3>
+                    <button class="modal__close close close--grey-dark close--icon" type="button">
+          <span class="close__description">Закрыть модальное окно</span>
+          <i class="icon-error"></i>
+        </button>
+                </div>
+                <div class="modal__content">
+                    <form action="#" class="form modal__write-message-form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Новое сообщение</legend>
+                            <label class="label modal__write-message-label">
+              <span>Кому:</span>
+              <input type="text" class="input-message" placeholder="Имя фамилия">
+              <time datetime="2019-07-27">24.07.2019</time>
+            </label>
+                            <textarea class="input input--textarea modal__write-message-textarea" placeholder="Имя фамилия">Сообщение</textarea>
+                            <span class="text-error">Ошибка...</span>
+                            <div class="modal__write-message-wrapper-action">
+                                <button class="button button--blue modal__write-message-save-submit" type="submit">Отправить</button>
+                                <div class="smile">
+                                    <button type="button" class="smile__button"><i class="icon-smile"></i></button>
+                                </div>
+                                <input type="file">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <!-- Подложка под модальным окном -->
         <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>
@@ -2247,7 +2294,6 @@
 
 
     <script src="../js/jquery.min.js"></script>
-    <!--<script src="../js/slick.min.js"></script>-->
     <script src="../js/jcf.min.js"></script>
     <script src="../js/jcf.file.min.js"></script>
     <script src="../js/jcf.select.min.js"></script>
