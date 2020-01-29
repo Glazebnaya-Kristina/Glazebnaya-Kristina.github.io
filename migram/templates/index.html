@@ -86,14 +86,14 @@
                     <b class="main-banner__title-strong">Социальная сеть</b>
                     <span class="main-banner__span">единомышленников по эмиграции</span>
                 </h2>
-                <button type="button" class="main-banner__button"><i class="icon-video main-banner__icon"></i>Посмотреть <span
+                <button type="button" class="main-banner__button js-open-modal" data-modal="video-youtube"><i class="icon-video main-banner__icon"></i>Посмотреть <span
               class="main-banner__button-span">видео-</span>презентацию
       </button>
             </div>
             <div class="tabs main-banner__tabs">
                 <ul class="tabs__caption">
                     <li class="tabs-active">Вход</li>
-                    <li>Регистрация</li>
+                    <li class="main-banner__tabs-registration">Регистрация</li>
                 </ul>
                 <div class="tabs__content tabs-active">
                     <form action="#" class="main-banner__form form">
@@ -116,7 +116,7 @@
                     </form>
                     <a href="#" class="main-banner__facebook-register">Зарегистрироваться через</a>
                 </div>
-                <div class="tabs__content">
+                <div class="tabs__content main-banner__registration-content">
                     <form action="#" class="main-banner__form form">
                         <label class="label main-banner__label main-banner__label--mail">
             <span class="label__name">Имя</span>
@@ -196,12 +196,13 @@
                 <li class="about-us__item about-us__item--special">
                     <div class="about-us__item-content">
                         <img src="../img/logo.png" alt="логотип компании">
-                        <button type="button" class="button button--blue about-us__item-button">Присоединиться к миграм</button>
+                        <a href="#header" class="button button--blue about-us__item-button js-anchor">Присоединиться к миграм</a>
                     </div>
                 </li>
             </ul>
 
             <button type="button" class="button button--blue about-us__button">Присоединиться к миграм</button>
+            <a href="#header" class="js-anchor">vvvv</a>
         </div>
     </section>
 
@@ -256,10 +257,10 @@
     <section class="register">
         <div class="register__inner">
             <h2 class="register__title">Регистрация</h2>
-            <div class="register__wrapper-subtitle">
-                <b class="register__subtitle">Зарегистрироваться</b>
-                <span class="register__name">в Migram</span>
-            </div>
+            <a href="#header" class="register__wrapper-subtitle js-anchor">
+      <b class="register__subtitle">Зарегистрироваться</b>
+      <span class="register__name">в Migram</span>
+    </a>
             <div class="register__content">
                 <a href="#" class="logo register__logo">
         <img src="../img/logo.png" alt="Логотип" class="logo__img">
@@ -348,101 +349,14 @@
     </footer>
 
     <section class="modal">
-        <!-- Модальное окно РЕГЕСТРИЦИЯ -->
-        <div class="popup popup--big modal__registration" data-modal="registration">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--line">
-                    <h3 class="modal__title">Регистрация</h3>
-                    <button class="modal__close close close--grey-dark close--icon" type="button">
-          <span class="close__description">Закрыть модальное окно</span>
-          <i class="icon-error"></i>
-        </button>
-                </div>
-                <div class="modal__content">
-                    <form action="#" class="form">
-                        <div class="form__wrapper form__wrapper--column-2">
-                            <label class="label">
-              <span class="label__name">Имя</span>
-              <input type="text" class="input" placeholder="Имя">
-            </label>
-                            <label class="label">
-              <span class="label__name">Фамилия</span>
-              <input type="text" class="input" placeholder="Фамилия">
-            </label>
-                            <label class="label">
-              <span class="label__name">E-mail</span>
-              <input type="email" class="input" placeholder="E-mail">
-            </label>
-                            <label class="label">
-              <span class="label__name">Телефон</span>
-              <input type="tel" class="input" placeholder="Телефон">
-            </label>
-                            <label class="label">
-              <span class="label__name">Пароль</span>
-              <input id="password" type="password" name="password" class="input" placeholder="Пароль">
-            </label>
-                            <label class="label">
-              <span class="label__name">Повторите пароль</span>
-              <input type="password" name="confirm_password" class="input" placeholder="Повторите пароль">
-            </label>
-                        </div>
-                        <span class="text-error">Ошибка...</span>
-                        <button type="submit" class="button button--blue button--xs-s modal__registration-button js-open-modal" data-modal="thanks-registration">
-            Зарегистрироваться
-          </button>
-                    </form>
-                </div>
-            </div>
-        </div>
 
-        <!-- Модальное окно Спасибо за РЕГЕСТРИЦИЮ -->
-        <div class="popup popup--small modal__thanks-registration" data-modal="thanks-registration">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--center">
-                    <h3 class="modal__title modal__title--element title title--element">Спасибо Вам за регистрацию</h3>
-                </div>
-                <div class="modal__content modal__content--center">
-                    <button class="button button--border-transparent button--modal js-open-modal" data-modal="sign-in" type="button">Закрыть
-        </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Модальное окно ВВОЙТИ -->
-        <div class="popup popup--big popup--hight modal__sign-in" data-modal="sign-in">
-            <div class="modal__dialog">
-                <div class="modal__header modal__header--line">
-                    <h3 class="modal__title">Вход</h3>
-                    <button class="modal__close close close--grey-dark close--icon" type="button">
-          <span class="close__description">Закрыть модальное окно</span>
-          <i class="icon-error"></i>
-        </button>
-                </div>
-                <div class="modal__content modal__content--center">
-                    <form action="#" class="form">
-                        <div class="form__wrapper form__wrapper--column-2">
-                            <p>
-                                <label class="label">
-                <span class="label__name">E-mail</span>
-                <input type="email" class="input" placeholder="E-mail">
-              </label>
-                                <button type="button" class="button link link--blue modal__sign-in-link js-open-modal" data-modal="registration">Регистрация
-              </button>
-                            </p>
-                            <p>
-                                <label class="label">
-                <span class="label__name">Пароль</span>
-                <input type="password" class="input" placeholder="Пароль">
-              </label>
-                                <button type="button" class="button link link--blue modal__sign-in-link js-open-modal" data-modal="password-reminder">Напомнить пароль
-              </button>
-                            </p>
-                        </div>
-                        <span class="text-error">Ошибка...</span>
-                        <a href="personal-area.html" class="button button--blue button--xs-s modal__sign-in-button">
-            Войти
-          </a>
-                    </form>
+        <!-- Модальное окно Видео -->
+        <div class="popup video-youtube" data-modal="video-youtube">
+            <div class="modal__dialog video-youtube__dialog">
+                <div class="modal__content video-youtube__content" data-youtube="Bey4XXJAqS8">
+                    <!--        <iframe src="https://www.youtube-nocookie.com/embed/Bey4XXJAqS8" frameborder="0"-->
+                    <!--                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+                    <!--                allowfullscreen></iframe>-->
                 </div>
             </div>
         </div>
