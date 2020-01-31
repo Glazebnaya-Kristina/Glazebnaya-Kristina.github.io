@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--  Edge и ряд мобильных браузеров слишком умны. Отключим это.-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="google" content="notranslate">
+    <title>Название проекта</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/style.css" data-inprogress="">
+    <link type="text/css" rel="stylesheet" href="../css/home.css" data-inprogress="">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <button class="menu-burger">
+        <span class="menu-burger__rel">Бургер меню</span>
+        <span class="menu-burger__toggle-line"></span>
+      </button>
+                <h1 class="header__title">“очень длинное название в две строки”</h1>
+                <p class="drops"><span class="drops__take">0</span>/4</p>
+            </div>
+            <ul class="header__carousel">
+                <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
+                <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
+                <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <main class="page__main">
+        <section class="info">
+            <div class="info__inner">
+                <h2 class="info__title">Информация о заправке</h2>
+                <!--   Информация   -->
+                <ul class="information info__information">
+                    <li class="information__item">
+                        <button class="information__button" type="button">
+            <span class="information__title">Маршрут</span>
+            <i class="icon-vector-smart-object1 information__icon"></i>
+          </button>
+                    </li>
+                    <li class="information__item information__item--center">
+                        <button class="information__button" type="button">
+            <span class="information__title">Посмотреть на карте</span>
+            <i class="icon-maps information__icon"></i>
+          </button>
+                    </li>
+                    <li class="information__item">
+                        <button class="information__button js-open-modal" type="button" data-modal="assessment">
+            <span class="information__title">Отметить как "понравилось"</span>
+            <i class="icon-heart-1 information__icon information__icon--heart"></i>
+          </button>
+                    </li>
+                </ul>
+                <!--   Табы   -->
+                <div class="tabs info__tabs">
+                    <ul class="tabs__caption">
+                        <li class="tabs__item tabs__item--hidden tabs-active">Контакты</li>
+                        <li class="tabs__item">отзывы (<span class="info__tabs-quantity">1</span>)</li>
+                        <li class="tabs__item">об услугах</li>
+                    </ul>
+                    <div class="tabs__content tabs-active">
+                        <!--   Контактная инфа   -->
+                        <ul class="contacts info__contacts">
+                            <li class="contacts__item">
+                                <strong class="contacts__title">Адрес:</strong>
+                                <p class="contacts__description">Санкт-Петербург, ул. Малая Балканская, дд.55</p>
+                            </li>
+                            <li class="contacts__item">
+                                <strong class="contacts__title">Рейтинг:</strong>
+                                <ul class="stars contacts__description">
+                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                    <li class="stars__item stars__item--yellow"><i class="icon-star-1"></i></li>
+                                </ul>
+                            </li>
+                            <li class="contacts__item">
+                                <strong class="contacts__title">Время работы:</strong>
+                                <p class="contacts__description">8.00 - 23.00</p>
+                            </li>
+                            <li class="contacts__item">
+                                <strong class="contacts__title">Вид оплаты:</strong>
+                                <p class="contacts__description">Карты, Наличные</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content">
+                        <!--    Отзывы      -->
+                        <ul class="reviews info__reviews">
+                            <li class="reviews__item">
+                                <article class="reviews__card">
+                                    <header class="reviews__header">
+                                        <span class="reviews__name">Дмитрий</span>
+                                        <time class="reviews__time" datetime="2018-08-06T10:17">10:17, 06 авг. 2018</time>
+                                    </header>
+                                    <div class="reviews__body">
+                                        <p class="reviews__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                            suscipit lobortis nisl.</p>
+                                    </div>
+                                    <footer class="reviews__footer">
+                                        <ul class="stars reviews__stars">
+                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                            <li class="stars__item stars__item--small"><i class="icon-star-1"></i></li>
+                                        </ul>
+                                    </footer>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="info__content-wrapper">
+                            <ul class="services info__services">
+                                <li class="services__item">
+                                    <div class="services__content">
+                                        <h3 class="services__title">Эконом</h3>
+                                        <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
+                                        <span class="services__price">300р.</span>
+                                    </div>
+                                    <button type="button" class="services__button-question">
+                  <span class="services__button-name">Вопрос</span>
+                  <i class="icon-question"></i>
+                </button>
+                                </li>
+                                <li class="services__item">
+                                    <div class="services__content">
+                                        <h3 class="services__title">Стандарт</h3>
+                                        <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
+                                        <span class="services__price">600р.</span>
+                                    </div>
+                                </li>
+                                <li class="services__item">
+                                    <div class="services__content">
+                                        <h3 class="services__title">Люкс</h3>
+                                        <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
+                                        <span class="services__price">900р.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="additions info__additions">
+                                <p class="additions__title">Дополнительные услуги<i class="icon-arrow additions__arrow"></i></p>
+                                <ul class="additions__list">
+                                    <li class="additions__item">
+                                        <p class="additions__description">Кондиционер кожи:</p>
+                                        <span class="additions__price">от 500р</span>
+                                    </li>
+                                    <li class="additions__item">
+                                        <p class="additions__description">Кондиционер кожи:</p>
+                                        <span class="additions__price">от 500р</span>
+                                    </li>
+                                    <li class="additions__item">
+                                        <p class="additions__description">Кондиционер кожи:</p>
+                                        <span class="additions__price">от 500р</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="sign-up">
+            <button class="button sign-up__button" type="button">Записаться</button>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <h2 class="footer__title">Навигация по сайту</h2>
+        </div>
+    </footer>
+
+    <section class="modal modal--opened">
+        <!-- Модальное окно Оценка -->
+        <div class="popup popup--opened assessment" data-modal="assessment">
+            <div class="modal__dialog assessment__dialog">
+                <form action="#" class="form modal__form">
+                    <div class="modal__header">
+                        <!--        <h3 class="modal__title">Регистрация</h3>-->
+                        <!--        <button class="modal__close close close&#45;&#45;grey-dark close&#45;&#45;icon" type="button">-->
+                        <!--          <span class="close__description">Закрыть модальное окно</span>-->
+                        <!--          <i class="icon-error"></i>-->
+                        <!--        </button>-->
+                        <p class="assessment__description"><span class="assessment__description-span">Пожалуйста оцените или</span> оставьте отзыв об услугах автомойки</p>
+                        <ul class="stars assessment__stars">
+                            <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                            <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                            <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                            <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                            <li class="stars__item stars__item--yellow"><i class="icon-star-1"></i></li>
+                        </ul>
+                        <span class="assessment__result">Хорошо</span>
+                    </div>
+                    <div class="modal__content assessment__content">
+                        <label class="label">
+            <span class="label__name">комментарий</span>
+            <textarea type="text" class="input input--textarea" placeholder="Оставьте комментарий..."></textarea>
+          </label>
+                    </div>
+                    <button class="button button--small modal__submit" type="submit">Отправить</button>
+                    <button type="button" class="assessment__close close">Нет, спасибо</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Подложка под модальным окном -->
+        <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>
+    </section>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/home.min.js"></script>
+
+</body>
+
+</html>
