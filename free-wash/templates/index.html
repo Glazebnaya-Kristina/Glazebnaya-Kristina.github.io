@@ -19,167 +19,179 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__inner">
-            <div class="header__top">
-                <button class="menu-burger">
+    <div class="page__body">
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__top">
+                    <button class="menu-burger">
         <span class="menu-burger__rel">Бургер меню</span>
         <span class="menu-burger__toggle-line"></span>
       </button>
-                <h1 class="header__title">“очень длинное название в две строки”</h1>
-                <p class="drops"><span class="drops__take">0</span>/4</p>
-            </div>
-            <ul class="header__carousel">
-                <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
-                <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
-                <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
-            </ul>
-        </div>
-    </header>
-
-
-
-    <main class="page__main">
-        <section class="info">
-            <div class="info__inner">
-                <h2 class="info__title">Информация о заправке</h2>
-                <!--   Информация   -->
-                <ul class="information info__information">
-                    <li class="information__item">
-                        <button class="information__button" type="button">
-            <span class="information__title">Маршрут</span>
-            <i class="icon-vector-smart-object1 information__icon"></i>
-          </button>
-                    </li>
-                    <li class="information__item information__item--center">
-                        <button class="information__button" type="button">
-            <span class="information__title">Посмотреть на карте</span>
-            <i class="icon-maps information__icon"></i>
-          </button>
-                    </li>
-                    <li class="information__item">
-                        <button class="information__button js-open-modal" type="button" data-modal="assessment">
-            <span class="information__title">Отметить как "понравилось"</span>
-            <i class="icon-heart-1 information__icon information__icon--heart"></i>
-          </button>
-                    </li>
+                    <h1 class="header__title">“очень длинное название в две строки”</h1>
+                    <div class="drops">
+                        <span class="drops__take">0</span>/4
+                    </div>
+                </div>
+                <ul class="header__carousel">
+                    <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
+                    <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
+                    <li class="header__carousel-list"><img src="../img/main-carousel1.jpg" class="header__carousel-img" alt="Фотография заправки"></li>
                 </ul>
-                <!--   Табы   -->
-                <div class="tabs info__tabs">
-                    <ul class="tabs__caption">
-                        <li class="tabs__item tabs__item--hidden tabs-active">Контакты</li>
-                        <li class="tabs__item">отзывы (<span class="info__tabs-quantity">1</span>)</li>
-                        <li class="tabs__item">об услугах</li>
+            </div>
+        </header>
+
+
+        <div class="help">
+            <div class="help__menu"></div>
+            <div class="help__content">
+                <strong class="help__title">Мойка в подарок !</strong>
+                <p class="help__text">Собирайте капли и получайте подарочные мойки. Не забывайте сообщать администратору о своём посещении</p>
+                <button class="help__button" type="button">ок</button>
+            </div>
+        </div>
+        <main class="page__main">
+            <section class="info">
+                <div class="info__inner">
+                    <h2 class="info__title">Информация о заправке</h2>
+                    <!--   Информация   -->
+                    <ul class="information info__information">
+                        <li class="information__item">
+                            <button class="information__button" type="button">
+              <span class="information__title">Маршрут</span>
+              <i class="icon-vector-smart-object1 information__icon"></i>
+            </button>
+                        </li>
+                        <li class="information__item information__item--center">
+                            <button class="information__button" type="button">
+              <span class="information__title">Посмотреть на карте</span>
+              <i class="icon-maps information__icon"></i>
+            </button>
+                        </li>
+                        <li class="information__item">
+                            <button class="information__button js-open-modal" type="button" data-modal="assessment">
+              <span class="information__title">Отметить как "понравилось"</span>
+              <i class="icon-heart-1 information__icon information__icon--heart"></i>
+            </button>
+                        </li>
                     </ul>
-                    <div class="tabs__content tabs-active">
-                        <!--   Контактная инфа   -->
-                        <ul class="contacts info__contacts">
-                            <li class="contacts__item">
-                                <strong class="contacts__title">Адрес:</strong>
-                                <p class="contacts__description">Санкт-Петербург, ул. Малая Балканская, дд.55</p>
-                            </li>
-                            <li class="contacts__item">
-                                <strong class="contacts__title">Рейтинг:</strong>
-                                <ul class="stars contacts__description">
-                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
-                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
-                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
-                                    <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
-                                    <li class="stars__item stars__item--yellow"><i class="icon-star-1"></i></li>
-                                </ul>
-                            </li>
-                            <li class="contacts__item">
-                                <strong class="contacts__title">Время работы:</strong>
-                                <p class="contacts__description">8.00 - 23.00</p>
-                            </li>
-                            <li class="contacts__item">
-                                <strong class="contacts__title">Вид оплаты:</strong>
-                                <p class="contacts__description">Карты, Наличные</p>
-                            </li>
+                    <!--   Табы   -->
+                    <div class="tabs info__tabs">
+                        <ul class="tabs__caption">
+                            <li class="tabs__item tabs__item--hidden tabs-active">Контакты</li>
+                            <li class="tabs__item">отзывы (<span class="info__tabs-quantity">1</span>)</li>
+                            <li class="tabs__item">об услугах</li>
+                            <li class="tabs__back"><i class="icon-arrow tabs__icon"></i>вернутся</li>
                         </ul>
-                    </div>
-                    <div class="tabs__content">
-                        <!--    Отзывы      -->
-                        <ul class="reviews info__reviews">
-                            <li class="reviews__item">
-                                <article class="reviews__card">
-                                    <header class="reviews__header">
-                                        <span class="reviews__name">Дмитрий</span>
-                                        <time class="reviews__time" datetime="2018-08-06T10:17">10:17, 06 авг. 2018</time>
-                                    </header>
-                                    <div class="reviews__body">
-                                        <p class="reviews__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                                            suscipit lobortis nisl.</p>
-                                    </div>
-                                    <footer class="reviews__footer">
-                                        <ul class="stars reviews__stars">
-                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
-                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
-                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
-                                            <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
-                                            <li class="stars__item stars__item--small"><i class="icon-star-1"></i></li>
-                                        </ul>
-                                    </footer>
-                                </article>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tabs__content">
-                        <div class="info__content-wrapper">
-                            <ul class="services info__services">
-                                <li class="services__item">
-                                    <div class="services__content">
-                                        <h3 class="services__title">Эконом</h3>
-                                        <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
-                                        <span class="services__price">300р.</span>
-                                    </div>
-                                    <button type="button" class="services__button-question">
-                  <span class="services__button-name">Вопрос</span>
-                  <i class="icon-question"></i>
-                </button>
+                        <div class="tabs__content tabs-active">
+                            <!--   Контактная инфа   -->
+                            <ul class="contacts info__contacts">
+                                <li class="contacts__item">
+                                    <strong class="contacts__title">Адрес:</strong>
+                                    <p class="contacts__description">Санкт-Петербург, ул. Малая Балканская, дд.55</p>
                                 </li>
-                                <li class="services__item">
-                                    <div class="services__content">
-                                        <h3 class="services__title">Стандарт</h3>
-                                        <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
-                                        <span class="services__price">600р.</span>
-                                    </div>
+                                <li class="contacts__item">
+                                    <strong class="contacts__title">Рейтинг:</strong>
+                                    <ul class="stars contacts__description">
+                                        <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                        <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                        <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                        <li class="stars__item stars__item--yellow"><i class="icon-star-fill-1"></i></li>
+                                        <li class="stars__item stars__item--yellow"><i class="icon-star-1"></i></li>
+                                    </ul>
                                 </li>
-                                <li class="services__item">
-                                    <div class="services__content">
-                                        <h3 class="services__title">Люкс</h3>
-                                        <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
-                                        <span class="services__price">900р.</span>
-                                    </div>
+                                <li class="contacts__item">
+                                    <strong class="contacts__title">Время работы:</strong>
+                                    <p class="contacts__description">8.00 - 23.00</p>
+                                </li>
+                                <li class="contacts__item">
+                                    <strong class="contacts__title">Вид оплаты:</strong>
+                                    <p class="contacts__description">Карты, Наличные</p>
                                 </li>
                             </ul>
-                            <div class="additions info__additions">
-                                <p class="additions__title">Дополнительные услуги<i class="icon-arrow additions__arrow"></i></p>
-                                <ul class="additions__list">
-                                    <li class="additions__item">
-                                        <p class="additions__description">Кондиционер кожи:</p>
-                                        <span class="additions__price">от 500р</span>
+                        </div>
+                        <div class="tabs__content">
+                            <!--    Отзывы      -->
+                            <ul class="reviews info__reviews">
+                                <li class="reviews__item">
+                                    <article class="reviews__card">
+                                        <header class="reviews__header">
+                                            <span class="reviews__name">Дмитрий</span>
+                                            <time class="reviews__time" datetime="2018-08-06T10:17">10:17, 06 авг. 2018</time>
+                                        </header>
+                                        <div class="reviews__body">
+                                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                                suscipit lobortis nisl.</p>
+                                        </div>
+                                        <footer class="reviews__footer">
+                                            <ul class="stars reviews__stars">
+                                                <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                                <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                                <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                                <li class="stars__item stars__item--small"><i class="icon-star-fill-1"></i></li>
+                                                <li class="stars__item stars__item--small"><i class="icon-star-1"></i></li>
+                                            </ul>
+                                        </footer>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="info__content-wrapper">
+                                <ul class="services info__services">
+                                    <li class="services__item">
+                                        <div class="services__content">
+                                            <h3 class="services__title">Эконом</h3>
+                                            <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
+                                            <span class="services__price">300р.</span>
+                                        </div>
+                                        <button type="button" class="services__button-question">
+                    <span class="services__button-name">Вопрос</span>
+                    <i class="icon-question"></i>
+                  </button>
                                     </li>
-                                    <li class="additions__item">
-                                        <p class="additions__description">Кондиционер кожи:</p>
-                                        <span class="additions__price">от 500р</span>
+                                    <li class="services__item">
+                                        <div class="services__content">
+                                            <h3 class="services__title">Стандарт</h3>
+                                            <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
+                                            <span class="services__price">600р.</span>
+                                        </div>
                                     </li>
-                                    <li class="additions__item">
-                                        <p class="additions__description">Кондиционер кожи:</p>
-                                        <span class="additions__price">от 500р</span>
+                                    <li class="services__item">
+                                        <div class="services__content">
+                                            <h3 class="services__title">Люкс</h3>
+                                            <p class="services__description">Lorem ipsum dolor sit amet, consectetuer </p>
+                                            <span class="services__price">900р.</span>
+                                        </div>
                                     </li>
                                 </ul>
+                                <div class="additions info__additions">
+                                    <p class="additions__title">Дополнительные услуги<i class="icon-arrow additions__arrow"></i></p>
+                                    <ul class="additions__list">
+                                        <li class="additions__item">
+                                            <p class="additions__description">Кондиционер кожи:</p>
+                                            <span class="additions__price">от 500р</span>
+                                        </li>
+                                        <li class="additions__item">
+                                            <p class="additions__description">Кондиционер кожи:</p>
+                                            <span class="additions__price">от 500р</span>
+                                        </li>
+                                        <li class="additions__item">
+                                            <p class="additions__description">Кондиционер кожи:</p>
+                                            <span class="additions__price">от 500р</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <p class="sign-up">
-            <button class="button sign-up__button" type="button">Записаться</button>
-        </p>
-    </main>
+            <p class="sign-up">
+                <button class="button sign-up__button js-open-modal" type="button" data-modal="time">Записаться</button>
+            </p>
+        </main>
+    </div>
 
     <footer class="footer">
         <div class="footer__inner">
@@ -187,9 +199,9 @@
         </div>
     </footer>
 
-    <section class="modal modal--opened">
+    <section class="modal">
         <!-- Модальное окно Оценка -->
-        <div class="popup popup--opened assessment" data-modal="assessment">
+        <div class="popup assessment" data-modal="assessment">
             <div class="modal__dialog assessment__dialog">
                 <form action="#" class="form modal__form">
                     <div class="modal__header">
@@ -220,8 +232,76 @@
             </div>
         </div>
 
+        <!-- Модальное окно Контроль -->
+        <div class="popup control" data-modal="control">
+            <div class="modal__dialog control__dialog">
+                <form action="#" class="form modal__form">
+                    <div class="modal__header">
+                        <i class="icon-car control__header-icon"></i>
+                    </div>
+                    <div class="modal__content control__content">
+                        <p class="control__text">Вы были записаны на автомойку в <strong class="control__time">19:30</strong>, готовы ли вы подтвердить запись ?</p>
+                    </div>
+                    <p class="control__wrapper-buttons">
+                        <button class="control__button" type="submit"><i class="icon-ok control__icon control__icon--check"></i></button>
+                        <button class="control__button control__button--close close" type="button"><i class="icon-close control__icon control__icon--close"></i></button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Модальное окно Другое время -->
+        <div class="popup time" data-modal="time">
+            <div class="modal__dialog time__dialog">
+                <form action="#" class="form modal__form time__form">
+                    <div class="modal__header">
+                        <i class="icon-clock time__header-icon"></i>
+                    </div>
+                    <div class="modal__content time__content">
+                        <p class="time__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
+                    </div>
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend form__legend--hidden">Выбрать время записи</legend>
+                        <ul class="time__list">
+                            <li class="time__item">
+                                <p class="time__item-info">
+                                    <time class="time__item-date" datetime="2018-10-16T19:30">16.10.2018</time>
+                                    <span class="time__item-clock">19:30</span>
+                                </p>
+                                <p class="radio-button">
+                                    <input type="radio" class="radio-button__input" id="radio1" name="time" value="19:30" />
+                                    <label for="radio1"></label>
+                                </p>
+                            </li>
+                            <li class="time__item">
+                                <p class="time__item-info">
+                                    <time class="time__item-date" datetime="2018-10-16T19:30">16.10.2018</time>
+                                    <span class="time__item-clock">20:00</span>
+                                </p>
+                                <p class="radio-button">
+                                    <input type="radio" class="radio-button__input" id="radio2" name="time" value="20:00" />
+                                    <label for="radio2"></label>
+                                </p>
+                            </li>
+                            <li class="time__item">
+                                <p class="time__item-info">
+                                    <time class="time__item-date" datetime="2018-10-16T19:30">16.10.2018</time>
+                                    <span class="time__item-clock">20:30</span>
+                                </p>
+                                <p class="radio-button">
+                                    <input type="radio" class="radio-button__input" id="radio3" name="time" value="20:30" />
+                                    <label for="radio3"></label>
+                                </p>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button button--small modal__submit js-open-modal" type="button" data-modal="control">ок</button>
+                </form>
+            </div>
+        </div>
+
         <!-- Подложка под модальным окном -->
-        <div class="modal__overlay modal__overlay--opened js-overlay-modal"></div>
+        <div class="modal__overlay js-overlay-modal"></div>
     </section>
 
 
