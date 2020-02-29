@@ -36,11 +36,27 @@
 <link rel="preconnect" href="//cdnjs.cloudflare.com/">
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>Thank | CITYCOOLING</title>
-  <link rel="stylesheet" href="css/thank.min.css">
+  <title>CITYCOOLING | CITYCOOLING</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+  <link rel="stylesheet" href="css/index.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <!--  FAVICON -->
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
+
 <body>
-<!-- Header -->
 <header class="header">
   <div class="header__inner">
     <a class="header__logo-link" href="index.html">
@@ -79,17 +95,145 @@
 <!-- Основной контент -->
 <main class="page__main">
 
-  <!-- Секции -->
-  <section class="thank">
-  <div class="thank__inner">
-    <h1 class="thank__title title title--other">Thank you</h1>
-    <strong class="thank__strong">Your information has been successfully processed !</strong>
-    <p class="thank__text">As a reminder, you will be contacted by phone or email shortly to confirm your information
-      and schedule your personalized quote with one of our certified Citicooling partners in your area.
-    </p>
-  </div>
-</section>
-
+  <header id="header">
+    <div class="nav-bar container-panel">
+      <div class="row">
+        <div class="col-6 col-sm-4 col-lg-2 col-xl-3">
+          <a href="#" class="nav-logo">
+            <img src="img/logo.png" alt="ogo">
+          </a>
+        </div>
+        <nav class="col-6 col-sm-8 col-lg-10 col-xl-9">
+          <div class="nav-menu d-flex align-items-center">
+            <ul class="nav-menu__list d-flex">
+              <li>
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="form.html" class="menu-active">
+                  Ductwork
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="contacts.html">
+                  Contact us
+                </a>
+              </li>
+              <li>
+                <a href="tel:+19183317400" class="nav-phone phone">
+                  (918) 331-7400
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="nav-menu__btn btn">
+              Get a free quote
+            </a>
+            <div class="hamburger js-menu-modal">
+              <div id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="form-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="form-content" data-aos="fade-up" data-aos-delay="100">
+              <div class="form-content__head">
+                <h2 class="section-title">
+                  Let us help you out
+                </h2>
+                <p>
+                  Let’s build a perfect system for you and your company, t auctor This is Photoshop's ve Lorem ipsum. nibh
+                  vel velit auctor This is Photoshop's ve lorem Ipsum. nibh
+                </p>
+              </div>
+              <form action="" class="form-content__form">
+                <input type="text" placeholder="Company Name" name="company_name">
+                <input type="text" placeholder="First Name" name="first_name">
+                <input type="text" placeholder="Last Name" name="last_name">
+                <input type="email" placeholder="Email" name="email" class="required input-email">
+                <input type="number" placeholder="Phone Number" name="phone">
+                <input type="text" placeholder="Zip Code" name="zip_code" class="input-add">
+                <p class="form-content__hint">
+                  Upload a cutsheet or the shop drawing
+                </p>
+                <input type="button" class="choose_file" value="Choose file">
+                <div class="add-file"></div>
+                <button type="submit" class="form-content__btn btn">
+                  Submit my Quote
+                </button>
+                <div class="form-content__info">
+                  <img src="img/form-file.png" alt="file">
+                  <p>
+                    We respect your privacy and do not tolerate spam and will never sell, rent, lease or give away your
+                    information (name, address, email, etc.) to any third party.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="reviews-list" data-aos="fade-up" data-aos-delay="100">
+              <div class="reviews-card__text">
+                <p>
+                  “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                </p>
+                <span class="reviews-card__rating"></span>
+                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+              </div>
+              <div class="reviews-card__text">
+                <p>
+                  “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                </p>
+                <span class="reviews-card__rating"></span>
+                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+              </div>
+              <div class="reviews-card__text">
+                <p>
+                  “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                </p>
+                <span class="reviews-card__rating"></span>
+                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+              </div>
+              <div class="reviews-card__text">
+                <p>
+                  “This is Photoshop's ve orem Ipsum. nibh vel velit auctor aliquet. ”
+                </p>
+                <span class="reviews-card__rating"></span>
+                <span class="reviews-card__name">
+                                    - George Carpenter
+                                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
 </main>
 
@@ -172,13 +316,58 @@
 </footer>
 
 
-<!-- Скрипты общие -->
+
+
+<!-- REQUEST MODAL WINDOW-END -->
+<div id="modal"></div> <!-- фон для модальных окон -->
+<!-- MENU MODAL WINDOW -->
+<div class="menu-modal" id="menu-modal">
+  <ul class="menu-list">
+    <li>
+      <a href="index.html">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="form.html" class="menu-active">
+        Ductwork
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        About Us
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Gallery
+      </a>
+    </li>
+    <li>
+      <a href="contacts.html">
+        Contact us
+      </a>
+    </li>
+    <li>
+      <a href="tel:+19183317400" class="nav-phone phone">
+        (918) 331-7400
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- MENU MODAL WINDOW-END -->
+</body>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src=js/plugins/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
     <script src="js/script.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-</body>
+<!--<script src="js/jquery-3.4.1.min.js"></script>-->
+<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<script src="js/form.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </html>
