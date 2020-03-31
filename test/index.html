@@ -8,12 +8,12 @@
 <meta name="format-detection" content="date=no">
 <meta name="format-detection" content="email=no">
 <meta name="notranslate" content="google">
-<!--<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180"/>-->
-<!--<link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="32x32"/>-->
-<!--<link rel="icon" href="/favicon/favicon-16x16.png" type="image/png" sizes="16x16"/>-->
-<!--<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon"/>-->
-<!--<link rel="manifest" href="/favicon/site.webmanifest"/>-->
-<!--<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#d03030"/>-->
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#d03030">
 <meta name="application-name" content="Название сайта">
 <meta name="apple-mobile-web-app-title" content="Название сайта">
 <meta name="theme-color" content="#fff">
@@ -24,6 +24,7 @@
 <meta property="og:title" content="Сео заголовок сайта">
 <meta property="og:description" content="Описание сайта">
 <meta property="og:type" content="website">
+<meta error="Укажите значение атрибута(ов)">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:image" content="/images/poster.png">
 <meta property="og:image:type" content="image/png">
@@ -38,119 +39,241 @@
 <link rel="canonical" href="http://localhost:8080/index.html">
 <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
 <link rel="preconnect" href="//cdnjs.cloudflare.com/">
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/styleTest.min.css">
 
   <title>Сео заголовок сайта | Название сайта</title>
 <!--  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>-->
-  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/indexTest.min.css">
 </head>
   <body>
-
+    <!-- Header -->
+    <header class="header"></header>
 
     <!-- Основной контент -->
     <main class="page__main">
 
-      <!-- Секции -->
-      <section class="cases">
-  <div class="cases__inner">
-    <div class="cases__content">
-      <h2 class="title cases__title">Кейсы</h2>
-      <ul class="cases__list">
-        <li class="cases__item">
-          <p class="cases__wrapper-icon">
-            <svg class="icon cases__icon">
-              <use xlink:href="icons/sprite.svg#man"></use>
-            </svg>
-          </p>
-          <h3 class="cases__subtitle">Клиент:</h3>
-          <p class="cases__description">Автосалон Renault Стандарт</p>
-        </li>
-        <li class="cases__item">
-          <p class="cases__wrapper-icon">
-            <svg class="icon cases__icon">
-              <use xlink:href="icons/sprite.svg#internet"></use>
-            </svg>
-          </p>
-          <h3 class="cases__subtitle">Сайт:</h3>
-          <p class="cases__description">renault-standart.ru</p>
-        </li>
-        <li class="cases__item">
-          <p class="cases__wrapper-icon">
-            <svg class="icon cases__icon">
-              <use xlink:href="icons/sprite.svg#chess"></use>
-            </svg>
-          </p>
-          <h3 class="cases__subtitle">Задача:</h3>
-          <p class="cases__description">Уменьшить стоимость привлечения клиента, проработать Яндекс.Директ</p>
-        </li>
-      </ul>
-
-      <a href="#" class="cases__link">
-        <span class="cases__link-text">Смотреть все кейсы</span>
-        <svg class="icon cases__link-icon">
-          <use xlink:href="icons/sprite.svg#right-arrow"></use>
-        </svg>
-      </a>
-    </div>
-    <div class="cases__carousel-wrapper">
-      <p class="cases__carousel-performed">Выполненные настройки</p>
-      <ul class="cases__carousel">
-        <li class="cases__carousel-item">
-          <img src="img/1200x900.jpg" alt="Фотография" class="cases__img">
-          <div class="cases__info-block">
-            <h3 class="cases__price">Цена заявки</h3>
-            <ul class="cases__price-list">
-              <li class="cases__price-item">
-                <b class="cases__price-field">Была:</b>
-                <p class="cases__price-value"><b class="cases__price-value-current">7 000</b>р.</p>
-              </li>
-              <li class="cases__price-item">
-                <b class="cases__price-field">Стала:</b>
-                <p class="cases__price-value"><b class="cases__price-value-current">600</b>р.</p>
-              </li>
-            </ul>
+      <section class="main-banner">
+  <div class="main-banner__inner">
+    <h1 class="main-banner__title">Популярные статьи на сайте</h1>
+    <p class="main-banner__description">посмотрите, что нравится людям!</p>
+    <ul class="main-banner__carousel">
+      <li class="main-banner__item preview">
+        <div class="main-banner__item-wrapper preview__wrapper">
+          <img src="img/sliser1.png" alt="Фотография слайдера" class="preview__img">
+          <div class="main-banner__item-content preview__content">
+            <h3 class="preview__title">
+              <strong class="main-banner__item-title-strong">Как сделать цветокоррекцию фотографии:</strong>
+              3 универсальных способа
+            </h3>
           </div>
-        </li>
-      </ul>
-      <div class="cases__controls">
-        <p class="cases__arrow">
-          <button class="cases__button cases__button--left">
-            <svg class="icon cases__arrow-icon">
-              <use xlink:href="icons/sprite.svg#back"></use>
-            </svg>
-            <span class="cases__button-line"></span>
-          </button>
-          <span class="cases__arrow-text">предыдущий</span>
-        </p>
+        </div>
+      </li>
+      <li class="main-banner__item preview">
+        <div class="main-banner__item-wrapper preview__wrapper">
+          <img src="img/sliser1.png" alt="Фотография слайдера" class="preview__img">
+          <div class="main-banner__item-content preview__content">
+            <h3 class="preview__title">
+              <strong class="main-banner__item-title-strong">Как сделать цветокоррекцию фотографии:</strong>
+              3 универсальных способа
+            </h3>
+          </div>
+        </div>
+      </li>
+      <li class="main-banner__item preview">
+        <div class="main-banner__item-wrapper preview__wrapper">
+          <img src="img/sliser1.png" alt="Фотография слайдера" class="preview__img">
+          <div class="main-banner__item-content preview__content">
+            <h3 class="preview__title">
+              <strong class="main-banner__item-title-strong">Как сделать цветокоррекцию фотографии:</strong>
+              3 универсальных способа
+            </h3>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-        <p class="cases__counter">
-          <b class="cases__counter-current">1</b>
-          / 7
-        </p>
+      <section class="photo-gallery">
+  <div class="photo-gallery__inner">
+    <h2 class="title">обновления в блоге</h2>
+    <ul class="photo-gallery__list">
+      <li class="photo-gallery__item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="photo-gallery__item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="photo-gallery__item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="photo-gallery__item photo-gallery__item--long">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo3.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="photo-gallery__item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-        <p class="cases__arrow cases__arrow--right">
-          <button class="cases__button cases__button--right">
-            <span class="cases__button-line"></span>
-            <svg class="icon cases__arrow-icon">
-              <use xlink:href="icons/sprite.svg#back"></use>
-            </svg>
-          </button>
-          <span class="cases__arrow-text">следующий</span>
-        </p>
-      </div>
-    </div>
+      <section class="posts">
+  <div class="posts__inner">
+    <h2 class="title">обновления в блоге</h2>
+    <p class="posts__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur.</p>
+    <ul class="posts__preview-list">
+      <li class="posts__preview-item preview">
+        <div class="posts__item-wrapper preview__wrapper">
+          <img src="img/photo4.jpg" alt="Фотография превью статьи" class="preview__img">
+          <div class="posts__item-content preview__content">
+            <h3 class="preview__title">Как улучшить фото за пару кликов</h3>
+          </div>
+          <a href="#" class="button posts__item-link">Читать</a>
+        </div>
+      </li>
+      <li class="posts__preview-item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="posts__preview-item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="posts__preview-item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+      <li class="posts__preview-item">
+        <div class="photo">
+          <a href="#" class="photo__link">
+            <img src="img/photo2.jpg" alt="Превью статьи" class="photo__img">
+          </a>
+          <p class="photo__description">Быстрое преображение фотографий</p>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="posts__list">
+      <li class="posts__item">
+        <h3 class="posts__item-title">Lorem Ipsum</h3>
+        <ul class="posts__sublist">
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Tempor incididunt ut labore et dolore magna.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Quis ipsum suspendisse ultrices gravida. </a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Risus commodo viverra maecenas accumsan lacus vel facilisis.</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="posts__item">
+        <h3 class="posts__item-title">Заголовок разных статей</h3>
+        <ul class="posts__sublist">
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Tempor incididunt ut labore et dolore magna.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Quis ipsum suspendisse ultrices gravida. </a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Risus commodo viverra maecenas accumsan lacus vel facilisis.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Tempor incididunt ut labore et dolore magna.</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="posts__item">
+        <h3 class="posts__item-title">Lorem Ipsum</h3>
+        <ul class="posts__sublist">
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Tempor incididunt ut labore et dolore magna.</a>
+          </li>
+          <li class="posts__subitem">
+            <a href="#" class="posts__link">Quis ipsum suspendisse ultrices gravida. </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="button button--more posts__button-more" id="toggle">
+      <span class="posts__button-more-text">Развернуть</span>
+      <svg class="button__icon">
+        <use xlink:href="icons/sprite.svg#up-arrow"></use>
+      </svg>
+    </button>
   </div>
 </section>
 
 
+      <!-- Секции -->
+<!--      <include src="src/sections/index/about-us.html"></include>-->
+
     </main>
 
+    <!-- Footer -->
+    <footer class="footer"></footer>
 
     <!-- Скрипты общие -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src=js/plugins/jquery-3.4.1.min.js"><\/script>')</script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
-    <script src="js/script.min.js"></script>
+<!--    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>-->
+    <script src="js/scriptTest.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src=plugins/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="plugins/slick.js"></script>
 
 </body>
 </html>
